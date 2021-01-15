@@ -1,0 +1,102 @@
+$backgroundcolor1:  rgb(219, 225, 227);
+$backgroundcolor2: #1f4567;
+$backgroundcolor3: #a7c2c8;
+$border-test: solid 1px #ccc;
+$border-round: 10px;
+
+$h1-size: 18px;
+$h2-size: 16px;
+$header-color:#072335;
+$line-height: 1.414;
+$mainText: 14px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro&display=swap');
+$poppins-text: 'Poppins', sans-serif;
+$sanSource-text: 'Source Sans Pro', sans-serif;
+
+body {
+    background-color: $backgroundcolor1;
+    color: rgb(31, 42, 50);
+    font-size: $mainText;
+    font-family: $sanSource-text;
+
+}
+
+a, a:visited { 
+    color: $header-color;
+    text-decoration: underline;
+}
+
+a:hover { 
+    color: $backgroundcolor3;
+    text-decoration: none;
+}
+header, footer {
+    margin: 5px auto;
+    padding: 0 10px;
+    width: 70%;
+   // border: $border-test;
+}
+
+footer { text-align: right;}
+
+main {
+    margin: 10px auto; 
+    padding: 10px;
+    background-color: $backgroundcolor2;
+    
+    border: 4px solid white;
+    border-radius: $border-round; 
+    width: 70%;
+    min-width: 300px;
+    box-shadow : 4px, 6px, 2px, rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row wrap;
+}
+
+
+
+.login-flex {
+    margin: 10px;
+    padding: 10px 30px;
+    flex: 50%;
+
+    background-color: $backgroundcolor1;
+    border-radius: $border-round;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1, h1 > a, h1 > a:visited {
+    font: #{$h1-size} / #{$line-height};
+    color: $header-color;
+    font-family: $poppins-text;
+    text-decoration: none;
+}
+
+.login-flex > h2> a {
+    font: #{$h2-size} / #{$line-height};
+    color: $header-color;
+    font-family: $poppins-text;
+
+}
+
+label, input, button {
+    margin: 10px;
+    display: block;
+}
+
+input:focus {
+    background-color: rgb(213, 213, 205);
+    border: 2px solid wheat;
+  }
+
+.error {
+    margin: 10px;
+    font-size: $mainText;
+    color: red;
+
+}
+

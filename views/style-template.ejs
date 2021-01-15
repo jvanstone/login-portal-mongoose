@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" type="text/css"  href="/public/css/style.css" />
+   </head>
+
+<body>
+
+    <header><h1>Login Portal</h1></header>
+
+    <main>
+
+
+    <div class="login login-flex">
+
+        <h2>Login</h2> 
+    
+    <form action="/login" method="POST"> 
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="username"> 
+        <label for="password">Create a password</label>
+        <input type="password" name="password" placeholder="password"> 
+        <button>login</button> 
+    </form> 
+    
+    </div>
+
+    <div class="signup login-flex">
+   
+        <h2>Sign up</h2>   
+        <form action="/register" method="POST">
+            <label for="first_name">First Name</label> 
+            <input type="text" name="first_name" placeholder="Your First Name" autofocus>
+            <label for="last_name">Last Name</label>
+            <input type ="text" name="last_name" placeholder="Your Last Name" autofocus> 
+            <label for="email">Email Address</label> 
+            <input type="email" name="email" placeholder="Your Email" autofocus>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="username" autofocus> 
+            <label for="password">Create a password</label>
+            <input type="password" name="password" placeholder="password" autofocus> 
+            <button>Submit</button> 
+        </form> 
+
+    </div>
+
+
+
+
+</main>
+
+<footer>
+   <!--  <a href="/logout">Logout</a>   -->  
+</footer>
+
+    
+</body>
+</html>
